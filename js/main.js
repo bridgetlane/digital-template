@@ -57,6 +57,7 @@ window.onload = function() {
      
     }
     
+    /*
     function update() {
         // Accelerate the 'logo' sprite towards the cursor,
         // accelerating at 500 pixels/second and moving no faster than 500 pixels/second
@@ -65,4 +66,5 @@ window.onload = function() {
         // new trajectory.
         bouncy.rotation = game.physics.arcade.accelerateToPointer( bouncy, this.game.input.activePointer, 500, 500, 500 );
     }
+    */
 };
