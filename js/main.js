@@ -32,7 +32,7 @@ window.onload = function() {
     function create() {
         
         // Create the dog sprite
-        game.add.sprite(0, 0, 'doggy');
+        game.add.sprite(game.world.centerX, game.world.centerY, 'doggy');
     
     /*
     
