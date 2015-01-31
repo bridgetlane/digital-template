@@ -30,9 +30,9 @@ window.onload = function() {
         bouncy.anchor.setTo( 0.5, 0.5 );
         
         // Turn on the arcade physics engine for this sprite.
-    //    game.physics.enable( bouncy, Phaser.Physics.ARCADE );
+        game.physics.enable( bouncy, Phaser.Physics.ARCADE );
         // Make it bounce off of the world bounds.
-    //    bouncy.body.collideWorldBounds = true;
+     //   bouncy.body.collideWorldBounds = true;
         
         // Add some text using a CSS style.
         // Center it in X, and position its top 15 pixels from the top of the world.
