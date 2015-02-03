@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Hello! Wow!</title>
+    <title>Doggy Memories</title>
     <script src="js/phaser.js"></script>
     <script src="js/main.js"></script>
 
@@ -10,7 +10,7 @@
 body
 {
     color: #777;
-    font-family: "Avenir", Verdana, sans-serif;
+    font-family: "Lucida Console", "Avenir", Verdana, sans-serif;
 }
 #readme
 {
@@ -22,59 +22,72 @@ body
 <body>
 <div id="game"></div>
 <div id="readme">
-<h2>Test game</h2>
+<h2>Doggy Memories</h2>
 <ul>
 
 <li><strong>High Concept:</strong>
-A one-sentence summary of your game.
+Your doggy is dreaming, help them recall their good memories and not their bad ones to maximize their mental health.
 </li>
-
+<br>
 <li><strong>Player Experience Goals:</strong>
-What experience do you want players to have when playing your game?
+The experience should be fun, quick, and something you want to play again.
 </li>
-
+<br>
 <li><strong>Genre:</strong>
-A single sentence that places the game within a game genre or a hybrid of genres.
+Casual games
 </li>
-
+<br>
 <li><strong>Game play:</strong>
-A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.
+In this game, players have to help their doggy navigate dreamworld by recalling good memories, not bad ones. <br><img src='assets/img/dog.png'>
+Players can jump and/or fly using the up arrow key, and move left and right using the respective arrow keys.
+Players should aim to collect good memories, represented as sunny clouds. <img src='assets/img/cloud.png' alt='good memory cloud'>
+Players should try to avoid hitting bad memories, represented as rainclouds. <img src='assets/img/raincloud.png' alt='bad memory cloud'>
+The goal is to collect all the good memories, while keeping your doggy's mental health above zero. Each good memory collected boosts mental health by 3, while bad memories decrease mental health by 5. The game starts with 10 mental health points and ends in failure if you reach 0. The maximum number of mental health points you can achieve is 28.
+<br>
+System dynamics: The good clouds fall and bounce, while bad clouds have randomly generated positions. Every time a bad cloud is hit, in addition to decreading mental health, a new bad cloud is generated and randomly placed. The dog is able to jump and fly, controlled by the player, in order to maximize health and win.<br>
+Core mechanic: The players repeatedly fly.
 </li>
-
+<br>
 <li><strong>Prototype goal:</strong>
-What game mechanic is this prototype evaluating?
+This prototype evaluates the ability to jump into flight. Defying gravity is part of the dream world.
 </li>
-
+<br>
 <li><strong>Features:</strong>
-What are the unique aspects of your game that set it apart?
+My game is unique because it is simple, but because the bad clouds are generated randomly, some instances are much harder to get out of than others.
 </li>
-
+<br>
 <li><strong>Setting/Premise:</strong>
-A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, put it here. If the game is abstract, then say so.
+The main character, the player's doggy, is dreaming. In this dream, he can recall good and bad memories. The player's goal is to help him navigate his dream world, avoiding bad memories (represented as rain clouds) and collecting good memories (represented as sunny clouds) in order to help the doggy's mental health.
 </li>
-
+<br>
 <li><strong>Story:</strong>
-If the game has a story, summarize it in a paragraph. How will the dramatic tension interact with the gameplay tension?
+The game does not have an storyline.
 </li>
-
+<br>
 <li><strong>Target Audience:</strong>
-A single sentence that describes the demographic you're trying to reach.
+Casual gamers who want to play something for fun.
 </li>
-
+<br>
 <li><strong>Play time:</strong>
-How long does your game take to play?
+2 minutes or less.
 </li>
-
+<br>
 <li><strong>Strategies:</strong>
-What player strategies do you expect will be effective at playing this game?
+Understanding the controls, utilizing jump/flying, and taking your time.
 </li>
-
+<br>
 <li><strong>Prototype Assets:</strong>
-Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+I made all the images from scratch.<br>
+<br>Background music is my own cut of the song "Jaunty Gumption" by Kevin MacLeod:
+<br>"Jaunty Gumption" Kevin MacLeod (incompetech.com)
+<br>Licensed under Creative Commons: By Attribution 3.0
+<br>http://creativecommons.org/licenses/by/3.0/<br>
+<br>Achievement music is "Friend Request" by plasterbrain (http://soundcloud.com/plasterbrain)<br>
+<br>Failure music is "Failure 1" by fins (http://freesound.org/people/fins/)
 </li>
-
+<br>
 <li><strong>Prototype Closest Other Game:</strong>
-Which other game most closely resembles your game? If you are borrowing from a Phaser Example, you must say so here.
+I did not model this game or take the game framework from any existing game or Phaser example. I did use Phaser documentation and many examples for many small parts of the game, such as learning how to set keypad controls.
 </li>
 
 </ul>
