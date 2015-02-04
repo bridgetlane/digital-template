@@ -190,7 +190,7 @@ window.onload = function() {
         score.text = 'mental health: ' + mentalhealth;
         
         // That bad memory has been seen and disappears, a new one pops up
-        mem.kill();
+        mem.destroy();
         generateRandBadMem();
         
         // If health <= 0, you lose!
@@ -208,7 +208,7 @@ window.onload = function() {
         winmusic.play();
     
         // Good clouds disappear
-        mem.kill();
+        mem.destroy();
         
         // Mental health increase
         mentalhealth = mentalhealth + 3;
@@ -230,7 +230,7 @@ window.onload = function() {
     *
     */
     function winLoseHit(doggy, mem) {
-        mem.kill();
+        mem.destroy();
     }
     
    /* 
@@ -249,11 +249,11 @@ window.onload = function() {
     }
     
    /* 
-    * When the intro image is clicked, kill it
+    * When the intro image is clicked, destroy it
     *
     */
     function dismiss(in_img) {
-        in_img.kill();
+        in_img.destroy();
     }
     
    /* 
@@ -312,10 +312,10 @@ window.onload = function() {
         if (this.cursors.right.isDown && this.cursors.up.isDown) {
             doggy.body.velocity.y = -300;
         }
-        else if (this.cursors.left.isDown && this.cursors.up.isDown) {
+        if (this.cursors.left.isDown && this.cursors.up.isDown) {
             doggy.body.velocity.y = -300;
         }
-        else if (this.cursors.right.isDown) {
+        if (this.cursors.right.isDown) {
             doggy.body.velocity.x = 300;
         }
         else if (this.cursors.left.isDown) {
